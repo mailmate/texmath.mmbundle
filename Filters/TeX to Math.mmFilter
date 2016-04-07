@@ -1,0 +1,11 @@
+{
+	name          = 'Tex to Math';
+	uuid          = '3A44100D-E3C7-4B5D-A768-F3145D7B29B3';
+	command       = '#!/bin/bash
+if [ "${MATH_MODE}" == "inline" ]; then
+	"${MM_BUNDLE_SUPPORT}/bin/mtex2MML" --inline
+else
+	"${MM_BUNDLE_SUPPORT}/bin/mtex2MML" --display
+fi
+';
+}
